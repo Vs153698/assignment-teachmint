@@ -16,7 +16,7 @@ const Clock = ({ selectedCountry }) => {
   const fetchTime = async () => {
     try {
       const response = await axios.get(
-        `http://worldtimeapi.org/api/timezone/${selectedCountry}`
+        `https://worldtimeapi.org/api/timezone/${selectedCountry}`
       );
 
       const serverTime = new Date(response.data.datetime);
