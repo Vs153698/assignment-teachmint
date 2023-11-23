@@ -96,7 +96,7 @@ const DetailScreen = () => {
       <div className="grid">
         {postData.map((item) => (
           <div
-            onClick={() => (setSelectedData(item), setIsOpen(true))}
+            onClick={() => {setSelectedData(item); setIsOpen(true)}}
             style={{ backgroundColor: generateRandomLightColor() }}
             key={item.id}
             className="card"
