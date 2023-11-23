@@ -11,7 +11,7 @@ const Modal = ({ setIsOpen, selectedData }) => {
     return () => {
       window.removeEventListener("scroll", handleCloseOnScroll);
     };
-  }, []);
+  }, [handleCloseOnScroll]);
 
   return (
     <>
