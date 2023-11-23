@@ -1,0 +1,23 @@
+.mainCard{
+    padding: 0px 10px 10px 10px;
+}
+.cardContainer{
+    border: 0.8px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cardContainer:hover{
+    transform: scale(1.001);
+    border: 0.8px solid blue;
+}
+
+.cardSpanTag{
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
