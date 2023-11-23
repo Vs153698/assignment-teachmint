@@ -23,7 +23,7 @@ export const DataProvider = ({ children }) => {
   useEffect(() => {
     fetchData("https://jsonplaceholder.typicode.com/users", setUser);
     fetchData("https://jsonplaceholder.typicode.com/posts", setPosts);
-    fetchData("http://worldtimeapi.org/api/timezone", setCountry);
+    fetchData("https://worldtimeapi.org/api/timezone", setCountry);
   }, []);
 
   const value = { user, post,country, loading };
